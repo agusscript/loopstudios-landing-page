@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap'); /*400*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap'); /*300*/
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap"); /*400*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"); /*300*/
 
 $White: hsl(0, 0%, 100%);
 $Black: hsl(0, 0%, 0%);
@@ -7,11 +7,67 @@ $Dark-Gray: hsl(0, 0%, 55%);
 $Very-Dark-Gray: hsl(0, 0%, 41%);
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 15px;
-    font-family: "Alata", serif;
+  font-size: 15px;
+  font-family: "Alata", serif;
+}
+
+header {
+  position: relative;
+  padding: 4rem 9rem;
+  width: 100%;
+  min-height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/home/agustin/Desktop/loopstudios-landing-page/images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 200px;
+    }
+
+    ul {
+      display: flex;
+      gap: 2rem;
+
+      li {
+        list-style: none;
+
+        a {
+          font-size: 1.1rem;
+          text-decoration: none;
+          color: $White;
+        }
+      }
+    }
+  }
+
+  .title-wrapper {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 2rem;
+    border: 2px solid $White;
+    width: 600px;
+    height: auto;
+    top: 35%;
+
+    h1 {
+      margin-top: 0.4rem;
+      color: $White;
+      font-family: "Josefin Sans";
+      text-transform: uppercase;
+      font-size: 4.2rem;
+      font-weight: 300;
+    }
+  }
 }
