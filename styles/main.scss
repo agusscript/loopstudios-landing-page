@@ -28,13 +28,13 @@ header {
   background-size: cover;
   background-position: center;
 
-
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     img {
+      z-index: 1;
       width: 200px;
     }
 
@@ -42,10 +42,25 @@ header {
       display: none;
       background: none;
       border: none;
+      z-index: 1;
 
-      img {
+      .open-menu {
         width: 30px;
       }
+
+      .close-menu {
+        display: none;
+        z-index: 1;
+        width: 27px;
+      }
+
+      .show {
+        display: block;
+      }
+    }
+
+    .btn-menu:hover {
+      cursor: pointer;
     }
 
     ul {
