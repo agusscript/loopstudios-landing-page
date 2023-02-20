@@ -138,6 +138,10 @@ header {
   width: 100%;
   height: auto;
 
+  .img-mobile {
+    display: none;
+  }
+
   .grid-header {
     display: flex;
     justify-content: space-between;
@@ -149,7 +153,7 @@ header {
       font-weight: 300;
     }
 
-    button {
+    .grid-btn {
       border: 2px solid black;
       background: none;
       width: 10rem;
@@ -160,7 +164,7 @@ header {
       letter-spacing: 0.3rem;
     }
 
-    button:hover {
+    .grid-btn:hover {
       cursor: pointer;
       background-color: $Black;
       color: $White;
@@ -173,6 +177,10 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
+
+    .mobile-btn {
+      display: none;
+    }
 
     picture {
       position: relative;

@@ -20,6 +20,16 @@
       }
     }
   }
+
+  .grid-section {
+    .grid-container {
+      picture {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 950px) {
@@ -29,6 +39,14 @@
 
   .hero-img-section {
     padding: 6rem 5rem;
+  }
+
+  .grid-section {
+    padding: 2rem 5rem;
+
+    .grid-container {
+      gap: 1.4rem;
+    }
   }
 }
 
@@ -65,6 +83,32 @@
       }
     }
   }
+
+  .grid-section {
+    padding: 2rem 1.4rem;
+
+    .grid-header {
+      h2 {
+        font-size: 2.8rem;
+      }
+
+      .grid-btn {
+        width: 9rem;
+        height: 2.3rem;
+      }
+    }
+
+    .grid-container {
+      gap: 1rem;
+
+      picture {
+        p {
+          font-size: 1.4rem;
+          left: 8%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 660px) {
@@ -92,7 +136,63 @@
         }
 
         p {
-          font-size: 0.9rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .grid-section {
+    padding: 0.8rem 1.4rem;
+    .img-desktop {
+      display: none;
+    }
+
+    .img-mobile {
+      display: block;
+    }
+
+    .grid-header {
+      justify-content: center;
+      .desktop-btn {
+        display: none;
+      }
+    }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+
+      .mobile-btn {
+        display: block;
+      }
+
+      .grid-btn {
+        border: 2px solid black;
+        background: none;
+        width: 10rem;
+        height: 2.5rem;
+        font-family: "Alata", serif;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        letter-spacing: 0.3rem;
+        align-self: center;
+        margin-top: 1.6rem;
+      }
+
+      .grid-btn:hover {
+        cursor: pointer;
+        background-color: $Black;
+        color: $White;
+      }
+
+      picture {
+        div {
+          height: 100%;
+        }
+
+        p {
+          font-size: 1.5rem;
         }
       }
     }
@@ -129,5 +229,13 @@
       }
     }
   }
-}
 
+  .grid-section {
+    .grid-header {
+      height: 0.1rem;
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
